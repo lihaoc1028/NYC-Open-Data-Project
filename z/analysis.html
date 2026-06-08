@@ -1,52 +1,29 @@
-<!DOCTYPE html>
+
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>NYC-OPEN-DATA project</title>
+    <title>open restaurant Charts</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="script.js"></script>
    </head>
-
    
   <body onload="init()">
     <div id="banner" class="container center">
-      <div style="text-align:center">
-          <h1>NYC Open Data</h1>
-          <h2>Filtering Restaurants</h2>
-      </div>
+      <h1> Charts: Motor Vehicle Collisions </h1>
     </div>
-   <nav class="contianer">
+  <nav class="contianer">
       <a href="index.html">Home</a>
-      <a href="info.html">Information</a>
+      <a href="information.html">Information</a>
       <a href="analysis.html">Analysis</a>
     </nav>
-       
- <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-   
-   
-   
-   
-   
-   
-   
-   
-   
-    <title>7.3 Prac Charts(collisions)</title>
-    <!-- Import libraries and link files  -->
-    <link href="style.css" rel="stylesheet" type="text/css"/>
-    <link href="c3.css" rel="stylesheet" type="text/css" />
-    <script src="c3.js"></script>
-    <script src="d3.js"></script>
-    <script src="helper.js"></script>  
-    <script src="script.js"></script>
-   </head>
 
-
-
-
+    <div class="container subbanner">
+      <div>
+        <p>use this to find the open restaurant chart</p>
+       </div>
+    </div>
+    <div class="container">
       <div id="panel">
         
         <div class="card">
@@ -60,13 +37,13 @@
         <div class="card">
           <h3>Accidents by Borough</h3>
           <p><span class="highlight">Scenario:</span> Aggregate the number of accidents by borough and create a chart to analyze the results.</p>
-          <a class="button" onclick="restaurantByBorough()"> Show Chart </a>
+          <a class="button" onclick="accidentsByBorough()"> Show Chart </a>
         </div>
         
         <div class="card">
-          <h3>Accidents by seatingchoice</h3>
-          <p><span class="highlight">Scenario:</span> Aggregate the number of restaurants by seating choice and create a chart to analyze the results.</p>
-          <a class="button" onclick="restaurantByseat()"> Show Chart </a>
+          <h3>Accidents by Vehicle Type</h3>
+          <p><span class="highlight">Scenario:</span> Aggregate the number of accidents by vehicle type and create a chart to analyze the results.</p>
+          <a class="button" onclick="accidentsByVehicle()"> Show Chart </a>
         </div>
       </div>
       
