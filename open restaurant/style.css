@@ -11,6 +11,7 @@ html,body{
   align-items:center;
 }
 
+
 nav{
   background-color:rgb(255, 0, 0);
 }
@@ -47,6 +48,7 @@ nav a:hover{
   border:1px solid gray;
   text-align:center;
 }
+
 
 .highlight{
   font-style:italic;
@@ -92,6 +94,8 @@ html,body{
 }
 
 
+
+
 nav{
   background-color:rgb(237, 189, 100);
 }
@@ -120,4 +124,6 @@ nav a:hover{
   background-color:cornflowerblue;
   color:white; }
 
-  
+
+
+

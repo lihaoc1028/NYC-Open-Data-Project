@@ -8,6 +8,7 @@
     <script src="script2.js"></script>
    </head>
 
+
    
   <body onload="init()">
     <div id="banner" class="container center">
@@ -47,8 +48,12 @@
 
 
 
+
+
+
+
       <div id="panel">
-        
+       
         <div class="card">
           <h3>Select Chart Type</h3>
           <select id="chartType" style="width:100px;">
@@ -56,27 +61,32 @@
             <option value="pie">Pie</option>
           </select>
         </div>
-        
+       
         <div class="card">
-          <h3>Accidents by Borough</h3>
-          <p><span class="highlight">Scenario:</span> Aggregate the number of accidents by borough and create a chart to analyze the results.</p>
+          <h3>restaurant by Borough</h3>
+          <p><span class="highlight">Scenario:</span> Aggregate the number of restaurant by borough and create a chart to analyze the results.</p>
           <a class="button" onclick="restaurantByBorough()"> Show Chart </a>
         </div>
-        
+       
         <div class="card">
-          <h3>Accidents by seatingchoice</h3>
+          <h3>restaurant by seatingchoice</h3>
           <p><span class="highlight">Scenario:</span> Aggregate the number of restaurants by seating choice and create a chart to analyze the results.</p>
           <a class="button" onclick="restaurantByseat()"> Show Chart </a>
         </div>
       </div>
-      
+     
       <div class="card">
        <div id="chart"></div> <!-- div for chart -->
       </div>
     </div>
+
 
     <div id="footer" class="container center">
       <h3>Lesson 7.3 Prac Charts(Collisions)</h3>
     </div>  
   </body>
 </html>
+
+
+
+

@@ -3,6 +3,8 @@
 let data, info, output;
 
 
+
+
 async function init(){  
   let link = "ori.json"; //let link = "https://data.cityofnewyork.us/Transportation/Open-Restaurants-Inspections/4dx7-axux/about_data";
   info = await fetch(link);
@@ -10,6 +12,8 @@ async function init(){
  
   let output = document.getElementById("output");
   let build = "";
+
+
 
 
   for(let i = 0; i < data.length; i+=1){
@@ -31,6 +35,8 @@ async function init(){
 }
 
 
+
+
 // Code below demonstrates the basic process to filter information by borough. Use this as a guide for Challenges 2 and 4 below.
 function filterByBorough(){
   let output = document.getElementById("output");
@@ -39,6 +45,8 @@ function filterByBorough(){
  
   let build = "";
   let ct = 0;
+
+
 
 
   for(let i = 0; i < data.length; i+=1){
@@ -64,6 +72,8 @@ function filterByBorough(){
 }
 
 
+
+
 // Challenge 2: Create an event handler (function) to filter the 311 Service Request by zip code.
 function filterByPost(){
   let output = document.getElementById("output");
@@ -72,6 +82,8 @@ function filterByPost(){
  
   let build = "";
   let ct = 0;
+
+
 
 
   for(let i = 0; i < data.length; i+=1){
@@ -104,6 +116,8 @@ function filterByseating(){
   let ct = 0;
 
 
+
+
   for(let i = 0; i < data.length; i+=1){
     let car = data[i];
     if(car.seatingchoice == Seating){
@@ -126,7 +140,11 @@ function filterByseating(){
 }
 
 
+
+
 //---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 
 function filterBycompliant(){
@@ -136,6 +154,8 @@ function filterBycompliant(){
  
   let build = "";
   let ct = 0;
+
+
 
 
   for(let i = 0; i < data.length; i+=1){
@@ -170,6 +190,8 @@ function filterByBS(){
   let ct = 0;
 
 
+
+
   for(let i = 0; i < data.length; i+=1){
     let car = data[i];
     if(car.borough == bor && car.seatingchoice == Seating){
@@ -190,7 +212,6 @@ function filterByBS(){
   result.innerHTML = `${ct} Results found.`
   output.innerHTML = build;
 }
-
 
 
 
